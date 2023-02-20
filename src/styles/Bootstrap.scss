@@ -1,0 +1,10 @@
+//Bootstrap css and customization
+
+//Customazations & ovverrides
+$nav-link-color:                    $text-color !default;
+$nav-link-hover-color:              $primary-color !default;
+$nav-link-padding-y:                .5rem !default;
+$nav-link-padding-x:                0.75rem !default;
+
+@import "~bootstrap/scss/bootstrap";
+

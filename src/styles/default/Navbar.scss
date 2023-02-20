@@ -1,0 +1,75 @@
+//navbar style
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-logo {
+        float: left;
+
+        img {
+            width: $profile-width;
+            border-radius: $profile-border-radius;
+            margin: $profile-margin
+        }
+
+        a {
+            text-decoration: none;
+            font-size: $font-size-lg;
+            text-transform: uppercase;
+            font-weight: $font-weight-bold;
+            transition: all 0.2s ease-in-out;
+            color: $text-color;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+    }
+
+    .nav-links {
+        float: right;
+        text-transform: uppercase;
+        font-size: $font-size-lg;
+        font-weight: $font-weight-bold;
+        overflow: hidden;
+
+        .link-top {
+            transition: all 0.2s ease-out;
+            position: relative;
+            top: -40px;
+        }
+
+        .link-bottom {
+            transition: all 0.2s ease-out;
+            position: relative;
+            top: 40px;
+        }
+
+        .menu-button {
+            border-radius: 50px;
+            float: right;
+            display: flex;
+            overflow: hidden;
+            direction: rtl;
+            text-align: left;
+            align-items: center;
+            width: 160px;
+            padding: $profile-margin;
+
+            span{
+                cursor: pointer;
+            }
+
+            .menu-line {
+                transition: all 0.4s ease-out;
+                width: 20px;
+                height: 2px;
+                margin: 0px 5px;
+                background-color: gray;
+            }
+        }
+    }
+}
