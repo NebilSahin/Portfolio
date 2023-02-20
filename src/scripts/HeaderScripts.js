@@ -51,7 +51,7 @@ export const HeaderHover = () => {
           (Math.abs(offsetDistance) / parseInt(headerStyle.width)) * 100 +
           'px)';
       }
-      console.log(art);
+      // console.log(art);
       //   let increaseX = (mousePosition.x - animatedElement.offsetLeft) / offsetAmount ;
       //   let increaseY = (mousePosition.y - animatedElement.offsetTop) / offsetAmount;
       //   animatedElement.style.marginLeft =  marginLeft + increaseX  + 'px';
@@ -61,7 +61,6 @@ export const HeaderHover = () => {
   );
   header.addEventListener('mouseout', function () {
     img.style.right = '0px';
-
     photo.style.right = '0px';
     photo.style.backdropFilter = 'blur(0px)';
     art.style.right = '0px';
