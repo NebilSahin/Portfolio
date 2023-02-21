@@ -18,11 +18,6 @@ export const HeaderHover = () => {
     function (event) {
       event.preventDefault();
 
-      //   mousePosition = {
-      //     x: event.clientX + parseInt(headerStyle.width) / 2,
-      //     y: event.clientY - parseInt(headerStyle.height) / 2,
-      //   };
-
       let offsetDistance =
         (event.clientX -
           (windowExtrasSpace / 2 + parseInt(headerStyle.width) / 2)) *
@@ -51,17 +46,11 @@ export const HeaderHover = () => {
           (Math.abs(offsetDistance) / parseInt(headerStyle.width)) * 100 +
           'px)';
       }
-      console.log(art);
-      //   let increaseX = (mousePosition.x - animatedElement.offsetLeft) / offsetAmount ;
-      //   let increaseY = (mousePosition.y - animatedElement.offsetTop) / offsetAmount;
-      //   animatedElement.style.marginLeft =  marginLeft + increaseX  + 'px';
-      //   animatedElement.style.marginTop =  marginTop  + increaseY + 'px';
     },
     true
   );
   header.addEventListener('mouseout', function () {
     img.style.right = '0px';
-
     photo.style.right = '0px';
     photo.style.backdropFilter = 'blur(0px)';
     art.style.right = '0px';

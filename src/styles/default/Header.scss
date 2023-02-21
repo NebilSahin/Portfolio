@@ -1,5 +1,6 @@
 .header-container {
     display: flex;
+    overflow: hidden;
 
     .photo-container {
         width: 50%;
@@ -25,12 +26,11 @@
         display: flex;
         position: relative;
         width: 100%;
-        transition: all 0.4s ease-out;
-
+        transition: all 0.2s ease-out;
         height: 700px;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url('../../assets/profile.jpeg');
+        background-image: url('../../assets/signup-bg.png');
     }
 }

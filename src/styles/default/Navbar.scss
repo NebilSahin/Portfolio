@@ -68,7 +68,10 @@
                 width: 20px;
                 height: 2px;
                 margin: 0px 5px;
-                background-color: gray;
+                background-color: $text-color;
+            }
+            &:hover .menu-line{
+                background-color: $primary-color;
             }
         }
     }

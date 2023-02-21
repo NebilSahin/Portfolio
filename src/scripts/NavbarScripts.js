@@ -10,6 +10,8 @@ export const MenuHover = () => {
   //on mouseover and out event
   menuButton.addEventListener('mouseover', function () {
     menuLine.style.width = '80px';
+    menuLine.style.backgroundColor = '80px';
+
     link.forEach((element) => {
       element.style.top = '0px';
     });
