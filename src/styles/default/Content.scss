@@ -1,0 +1,98 @@
+.content-container {
+    background-color: transparent;
+
+    .section-text {
+        margin-bottom: 4rem;
+    }
+
+    .section-container {
+        padding: $section-padding;
+
+        &.primary {
+            padding: $section-padding-primary;
+            color: white;
+            background-color: $primary-color;
+            border-radius: 2.5rem;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: -2.5rem;
+        }
+
+        &.last {
+            top: 0rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        h1 {
+            display: flex;
+            align-items: center;
+            font-weight: $font-weight-extrabold;
+            margin-bottom: $title-bottom-spacing;
+
+            .title-line {
+                width: 40px;
+                height: 6px;
+                margin: 0px 15px;
+                border-radius: 10px;
+                background-color: $gray-900;
+
+                &.primary {
+                    background-color: $primary-color;
+                }
+            }
+        }
+
+        h3 {
+            font-weight: $font-weight-bold;
+        }
+
+        p {
+            text-align: justify;
+            font-size: $font-size-slg;
+        }
+
+        .contact-icon {
+            color: white;
+            text-decoration: none;
+            display: table;
+            width: auto;
+
+            span {
+                font-size: $font-size-lg;
+                margin: 0 1rem;
+            }
+        }
+    }
+
+    .button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        text-decoration: unset;
+        border-radius: 30px;
+
+        &.secondary {
+            color: black;
+            border: 1px solid black;
+            transition: all 0.2s ease-out;
+            font-weight: $font-weight-bold;
+            &:hover {
+                background-color: $primary-color;
+                border-color: $primary-color;
+                color: white;
+            }
+        }
+
+        &.primary {
+            color: white;
+            border: 2px solid white;
+            transition: all 0.2s ease-out;
+
+            &:hover {
+                background-color: black;
+                border-color: black;
+            }
+        }
+    }
+}

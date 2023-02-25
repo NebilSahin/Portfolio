@@ -2,13 +2,13 @@
 
 .nav-container {
     display: flex;
-    position: fixed;
     justify-content: space-between;
+    position: fixed;
     align-items: center;
-    z-index: 20;
+    z-index: 200;
     max-width: $page-width;
     background-color: white;
-
+    
     .nav-logo {
         float: left;
 
@@ -19,6 +19,7 @@
         }
 
         a {
+            display: none;
             text-decoration: none;
             font-size: $font-size-lg;
             text-transform: uppercase;
@@ -37,10 +38,20 @@
         text-transform: uppercase;
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
-        overflow: hidden;
 
         .nav {
+            width: 160px;
+            height: 50px;
             direction: rtl;
+            .nav-item{
+                // width: 50%;
+                text-align: right;
+            }
+        }
+
+        .link{
+            width: 140px;
+            background-color: rgba(white, 0.8);
         }
 
         .link-top {
@@ -49,8 +60,10 @@
             top: -25px;
             opacity: 0;
             z-index: -10;
+            height: 0;
 
             &.active {
+                height: auto;
                 top: 0px;
                 opacity: 1;
                 z-index: 0;
@@ -63,8 +76,10 @@
             top: 25px;
             opacity: 0;
             z-index: -10;
+            height: 0;
 
             &.active {
+                height: auto;
                 top: 0px;
                 opacity: 1;
                 z-index: 0;
@@ -72,6 +87,7 @@
         }
 
         .menu-button {
+            width: 100% !important;
             border-radius: 50px;
             float: right;
             display: flex;

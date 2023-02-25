@@ -1,0 +1,212 @@
+.sub-title {
+  display: flex;
+  align-items: center;
+  width: 200px;
+
+  .sub-line {
+    width: 100%;
+    height: 6px;
+    margin: 0px 15px;
+    border-radius: 10px;
+    background-color: $gray-900;
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+
+  .skill-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    margin: 0.5rem;
+
+    div {
+      transition: all 0.2s ease-out;
+      border: 1px solid black;
+      border-radius: 1.5rem;
+      padding: 1rem;
+      height: 80px;
+      width: 80px;
+    }
+
+    &:hover div {
+      height: 70px;
+      width: 70px;
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+
+    &.orange {
+      div {
+        border-color: $orange;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($orange, 0.1);
+      }
+    }
+
+    &.pale-orange {
+      div {
+        border-color: $pale-orange;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($pale-orange, 0.1);
+      }
+    }
+    &.pale-orange-2 {
+      div {
+        border-color: $pale-orange-2;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($pale-orange-2, 0.1);
+      }
+    }
+    &.light-blue {
+      div {
+        border-color: $light-blue;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($light-blue, 0.1);
+      }
+    }
+    &.pink {
+      div {
+        border-color: $pink;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($pink, 0.1);
+      }
+    }
+    &.yellow {
+      div {
+        border-color: $yellow;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($yellow, 0.1);
+      }
+    }
+    &.dark-yellow {
+      div {
+        border-color: $dark-yellow;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($dark-yellow, 0.1);
+      }
+    }
+    &.pale-yellow {
+      div {
+        border-color: $pale-yellow;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($pale-yellow, 0.1);
+      }
+    }
+    &.dark-red {
+      div {
+        border-color: $dark-red;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($dark-red, 0.1);
+      }
+    }
+    &.blue {
+      div {
+        border-color: $blue;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($blue, 0.1);
+      }
+    }
+    &.purple {
+      div {
+        border-color: $purple;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($purple, 0.1);
+      }
+    }
+    &.pale-purple {
+      div {
+        border-color: $pale-purple;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($pale-purple, 0.1);
+      }
+    }
+    &.dark-blue {
+      div {
+        border-color: $dark-blue;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($dark-blue, 0.1);
+      }
+    }
+    &.dark-blue-2 {
+      div {
+        border-color: $dark-blue-2;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($dark-blue-2, 0.1);
+      }
+    }
+    &.green {
+      div {
+        border-color: $green;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($green, 0.1);
+      }
+    }
+    &.pale-green {
+      div {
+        border-color: $pale-green;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($pale-green, 0.1);
+      }
+    }
+    &.gray {
+      div {
+        border-color: $gray-600;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($gray-700, 0.1);
+      }
+    }
+    &.pale-blue {
+      div {
+        border-color: $pale-blue;
+      }
+      &:hover div {
+        border-color: transparent;
+        background-color: rgba($pale-blue, 0.1);
+      }
+    }
+  }
+}

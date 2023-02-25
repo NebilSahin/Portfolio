@@ -1,30 +1,70 @@
 //Global vriables
 
 //Page
-$page-width: 1300px;
+$page-width: 1400px;
 
 //Colors
-$primary-color:                     #DC143C;
-$secondary-color:                   #DC143C;
-$text-color:                        #282d31;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+$primary-color: #dc143c;
+$secondary-color: #dc143c;
+$text-color: $gray-900;
+
+$orange: rgb(227, 79, 38);
+$pale-orange: rgb(231, 111, 0);
+$pale-orange-2: rgb(238, 81, 59);
+$light-blue: rgb(83, 193, 222);
+$pink: rgb(204, 102, 153);
+$yellow: rgb(247, 223, 30);
+$dark-yellow: rgb(255, 154, 0);
+$pale-yellow: rgb(252, 202, 63);
+$dark-red: rgb(195, 32, 61);
+$blue: rgb(49, 120, 198);
+$purple: rgb(153, 153, 255);
+$pale-purple: rgb(134, 123, 163);
+$dark-blue: rgb(0, 117, 143);
+$dark-blue-2: rgb(49, 168, 255);
+$pale-blue: rgb(0, 117, 157);
+$green: rgb(1, 150, 57);
+$pale-green: rgb(79, 192, 141);
 
 //Font
-$font-family:                       'Source Sans Pro', sans-serif;
+$font-family: "Source Sans Pro", sans-serif;
 
-$font-size-default:                 1rem;
-$font-size-xs:                      0.5rem;
-$font-size-sm:                      0.75rem;
-$font-size-lg:                      1.25rem;
-$font-size-xl:                      1.5rem;
-$font-size-xxl:                     2rem;
+$font-size-default: 1rem;
+$font-size-xs: 0.5rem;
+$font-size-sm: 0.75rem;
+$font-size-slg: 1.15rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+$font-size-xxl: 2rem;
+$font-size-xxxl: 3rem;
 
-$font-weight-default:               400;
-$font-weight-light:                 100;
-$font-weight-bold:                  600;
-$font-weight-extrabold:             900;
-
+$font-weight-default: 400;
+$font-weight-light: 100;
+$font-weight-bold: 600;
+$font-weight-extrabold: 900;
 
 //Profile Variables
-$profile-border-radius:             50%;
-$profile-width:                     3rem;
-$profile-margin:                    0.5rem 0.75rem;
+$profile-border-radius: 50%;
+$profile-width: 3rem;
+$profile-margin: 0.5rem 0.75rem;
+
+//content
+$section-padding-primary: 6rem;
+$section-padding-primary-mobile: 3rem;
+$section-padding: 2rem 6rem;
+$section-padding-mobile: 1rem 3rem;
+
+$title-bottom-spacing: 2rem;
+
+$loader-size: 6rem;
+$loader-border-size: 7rem;

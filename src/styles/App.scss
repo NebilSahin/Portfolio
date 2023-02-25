@@ -9,17 +9,72 @@
 html,
 body {
   font-family: $font-family;
+  scroll-padding-top: 60px;
+  -webkit-font-smoothing: antialiased;
+
+  * {
+    box-sizing: border-box;
+  }
+
+
 }
-.App{
-  max-width: $page-width;
-  margin: auto;
+
+body{
+  overflow: hidden;
+
+  &.done{
+    overflow: auto;
+    overflow-x: hidden;
+  }
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ ::-webkit-scrollbar-thumb {
+  background: $primary-color; 
+  border-radius: 2rem
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $gray-800; 
+}
+
+
 
 //Default Theme
 @media (orientation: landscape) {
+  .App{
+    max-width: $page-width;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0px 0px 50px 0px rgba(black, 0.4);
+  }
+
   @import './default/Navbar.scss';
   @import './default/Header.scss';
+  @import './default/Content.scss';
+  @import './default/MouseBubble.scss';
+  @import './default/Skills.scss';
+  @import './default/Projects.scss';
+  @import './default/Splash.scss';
 }
 
 //Mobile Theme
-@media (orientation: portrait) {}
+@media (orientation: portrait) {
+  .App{
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0px 0px 50px 0px rgba(black, 0.4);
+  }
+  @import './mobile/Navbar.scss';
+  @import './mobile/Header.scss';
+  @import './mobile/Content.scss';
+  @import './mobile/MouseBubble.scss';
+  @import './mobile/Skills.scss';
+  @import './mobile/Projects.scss';
+  @import './mobile/Splash.scss';
+}
