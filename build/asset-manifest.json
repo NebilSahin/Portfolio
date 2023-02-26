@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.21fe447f.css",
+    "main.js": "./static/js/main.59beb647.js",
+    "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
+    "static/media/manga-arabia.png": "./static/media/manga-arabia.c21b4c4148e3bd0afb19.png",
+    "static/media/Nebil Sahin CV 2023.pdf": "./static/media/Nebil Sahin CV 2023.7de4d1d1340ea97dfcac.pdf",
+    "static/media/Nebil-Sahin-Photo.png": "./static/media/Nebil-Sahin-Photo.696002768fcdf0ee13ca.png",
+    "static/media/luyten-app-2.png": "./static/media/luyten-app-2.20fb96ccabf73408d435.png",
+    "static/media/advanceexperts-website.png": "./static/media/advanceexperts-website.861986f8b08b502ec0d1.png",
+    "static/media/digitalfuture-website.png": "./static/media/digitalfuture-website.5e36ef039deb7b204985.png",
+    "static/media/Nebil-Sahin-Photo.jpg": "./static/media/Nebil-Sahin-Photo.725245fb9307c1b8baa2.jpg",
+    "static/media/Nebil-Sahin-Header-bg3.jpg": "./static/media/Nebil-Sahin-Header-bg3.954373498d09fda5850e.jpg",
+    "index.html": "./index.html",
+    "main.21fe447f.css.map": "./static/css/main.21fe447f.css.map",
+    "main.59beb647.js.map": "./static/js/main.59beb647.js.map",
+    "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21fe447f.css",
+    "static/js/main.59beb647.js"
+  ]
+}
