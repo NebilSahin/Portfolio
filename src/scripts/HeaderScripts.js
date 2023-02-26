@@ -78,7 +78,7 @@ export const PhotoMoveHover = (container, img, offset) => {
 
     if (isAnimate) {
       let increaseX = (mouseDelayed - animatedElement.offsetLeft) / offsetAmount;
-      animatedElement.style.left = marginLeft + increaseX + 'px';
+      animatedElement.style.left =  increaseX + 'px';
 
     } else {
       animatedElement.style.left = '0px';

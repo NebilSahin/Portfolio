@@ -11,13 +11,12 @@
 
         .profile-container {
             height: 100%;
-            float: right;
             margin: 10px;
 
             .profile-img {
                 width: auto;
                 height: 110%;
-                margin: auto;
+                margin-left: auto;
                 display: flex;
                 position: relative;
                 z-index: -5;
