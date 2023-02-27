@@ -1,9 +1,10 @@
 //on hover affect for the Header
 export const MouseBubble = () => {
-    let container = document.querySelector('body');
-    let mouseBubble = document.querySelector('.mouse-bubble');
-    let mouseMessage = document.querySelector('.mouse-message');
-    let mouseMessageStyle = mouseMessage.currentStyle || window.getComputedStyle(mouseMessage);
+    let container = document.querySelector("body");
+    let mouseBubble = document.querySelector(".mouse-bubble");
+    let mouseMessage = document.querySelector(".mouse-message");
+    let mouseMessageStyle =
+        mouseMessage.currentStyle || window.getComputedStyle(mouseMessage);
 
     let message = null;
     let mousePosition = {
@@ -21,26 +22,30 @@ export const MouseBubble = () => {
         let distY = 0;
 
         if (message) {
-            distX = mousePosition.x - parseInt(mouseMessageStyle.width) / 2 + 10 - ballX;
+            distX =
+                mousePosition.x -
+                parseInt(mouseMessageStyle.width) / 2 +
+                10 -
+                ballX;
             distY = mousePosition.y - 50 - ballY;
         } else {
             distX = mousePosition.x - ballX;
             distY = mousePosition.y - ballY;
         }
 
-        ballX = ballX + (distX * speed);
-        ballY = ballY + (distY * speed);
+        ballX = ballX + distX * speed;
+        ballY = ballY + distY * speed;
 
         mouseBubble.style.left = ballX + "px";
         mouseBubble.style.top = ballY + "px";
 
         requestAnimationFrame(animate);
     }
-    
+
     animate();
 
     container.addEventListener(
-        'mousemove',
+        "mousemove",
         function (event) {
             event.preventDefault();
 
@@ -48,18 +53,21 @@ export const MouseBubble = () => {
                 x: event.pageX - 10,
                 y: event.pageY - 10,
             };
-
-            if (event.target.closest('[message]')) {
-                message = event.target.closest('[message]').getAttribute('message');
+            
+            if (event.target.closest("[message]")) {
+                message = event.target
+                    .closest("[message]")
+                    .getAttribute("message");
                 mouseMessage.textContent = message;
-                mouseBubble.style.width = parseInt(mouseMessageStyle.width) + 'px';
-                mouseBubble.style.height = 40 + 'px';
-
+                mouseMessage.style.width= '100%';
+                mouseBubble.style.width = 'fit-content';
+                mouseBubble.style.height = 40 + "px";
             } else {
                 message = null;
-                mouseMessage.textContent = '';
-                mouseBubble.style.width = 20 + 'px';
-                mouseBubble.style.height = 20 + 'px';
+                mouseMessage.textContent = "";
+                mouseMessage.style.width= '0%';
+                mouseBubble.style.width = 20 + "px";
+                mouseBubble.style.height = 20 + "px";
             }
         },
         true
