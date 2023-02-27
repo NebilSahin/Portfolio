@@ -20,6 +20,10 @@
         }
 
         &.last {
+            background-image: url('../../assets/footer-character.png');
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: 700px;
             top: 0rem;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;

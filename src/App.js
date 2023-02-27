@@ -16,7 +16,7 @@ function App() {
             easing: "ease-out",
             once: true,
             mirror: false,
-            anchorPlacement: 'top-top',
+            anchorPlacement: 'bottom-bottom',
         });
         setTimeout(function(){
             let splash = document.querySelector('.splash-container');
