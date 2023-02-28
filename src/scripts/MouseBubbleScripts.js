@@ -42,6 +42,15 @@ export const MouseBubble = () => {
         requestAnimationFrame(animate);
     }
 
+    function getTextWidth(text, font) {
+        const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
+        const context = canvas.getContext("2d");
+        context.font = font;
+        const metrics = context.measureText(text);
+        return metrics.width;
+      }
+      
+
     animate();
 
     container.addEventListener(
@@ -53,14 +62,14 @@ export const MouseBubble = () => {
                 x: event.pageX - 10,
                 y: event.pageY - 10,
             };
-            
+
             if (event.target.closest("[message]")) {
                 message = event.target
                     .closest("[message]")
                     .getAttribute("message");
                 mouseMessage.textContent = message;
                 mouseMessage.style.width= '100%';
-                mouseBubble.style.width = 'fit-content';
+                mouseBubble.style.width = getTextWidth(message, "600 1rem sans-serif") + 40 + 'px';
                 mouseBubble.style.height = 40 + "px";
             } else {
                 message = null;
