@@ -34,9 +34,9 @@ This project is a my personal portfolio that I have built in <strong>ReactJS</st
 
 ## Screenshots
 <div align="center">
-    <img src="./demo/1.png" style="max-width: 100%" width="180" alt="Luyten Icon">
-    <img src="./demo/2.png" style="max-width: 100%" width="180" alt="Luyten Icon">
-    <img src="./demo/3.png" style="max-width: 100%" width="180" alt="Luyten Icon">
+    <img src="./demo/1.png" style="max-width: 100%"  alt="Luyten Icon">
+    <img src="./demo/2.png" style="max-width: 100%"  alt="Luyten Icon">
+    <img src="./demo/3.png" style="max-width: 100%" alt="Luyten Icon">
 </div>
 
 ## Getting Started
