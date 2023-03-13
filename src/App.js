@@ -1,40 +1,48 @@
-import React, { useEffect } from "react";
-import "./styles/App.scss";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Content from "./components/Content";
-import MouseBubble from "./components/MouseBubble";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useEffect, useRef } from 'react';
+import './styles/App.scss';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Content from './components/Content';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { SmoothScroll } from './scripts/AppScripts';
+import Scrollbar from 'smooth-scrollbar';
 
 function App() {
-    //effects after rendering
-    useEffect(() => {
-        AOS.init({
-            delay: 200,
-            duration: 400,
-            easing: "ease-out",
-            once: true,
-            mirror: false,
-            anchorPlacement: 'bottom-bottom',
-        });
-        setTimeout(function(){
-            let splash = document.querySelector('.splash-container');
-            let body = document.querySelector('body');
-            body.classList.add('done');
-            splash.classList.add('done');
-        }, 1500)
-    }, []);
+  //effects after rendering
+  useEffect(() => {
+    AOS.init({
+      delay: 200,
+      duration: 400,
+      easing: 'ease-out',
+      once: true,
+      mirror: true,
+      anchorPlacement: 'bottom-bottom',
+      useClassNames: false,
+    });
 
-    //render content
-    return (
-        <div className="App">
-            <MouseBubble />
-            <Navbar />
-            <Header />
-            <Content />
-        </div>
-    );
+    setTimeout(function () {
+      let splash = document.querySelector('.splash-container');
+      let body = document.querySelector('body');
+      body.classList.add('done');
+      splash.classList.add('done');
+    }, 1500);
+
+    Scrollbar.init(document.querySelector('.app-container'));
+
+    SmoothScroll();
+  }, []);
+
+  //render content
+  return (
+    <div className="app-container">
+      <div className="app">
+        <Navbar />
+        <Header />
+        <Content />
+      </div>
+    </div>
+  );
 }
 
 export default App;

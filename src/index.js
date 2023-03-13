@@ -4,10 +4,12 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Splash from "./components/Splash";
+import MouseBubble from './components/MouseBubble';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
+        <MouseBubble />
         <Splash />
         <App />
     </React.StrictMode>

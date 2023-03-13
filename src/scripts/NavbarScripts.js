@@ -46,7 +46,7 @@ export const MenuHover = () => {
 
 export const NavbarWidth = () => {
     //elements
-    let container = document.querySelector(".App");
+    let container = document.querySelector(".app");
     let navbar = document.querySelector(".nav-container");
     let containerStyle =
         container.currentStyle || window.getComputedStyle(container);

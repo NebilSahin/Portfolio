@@ -46,12 +46,13 @@ body{
 
 //Default Theme
 @media (orientation: landscape) {
-  #root{
+  .app-container{
     background-image: url('../assets/side-background.png');
     background-size: contain;
+    height: 100vh;
   }
 
-  .App{
+  .app{
     max-width: $page-width;
     background-color: white;
     overflow: hidden;
@@ -70,7 +71,7 @@ body{
 
 //Mobile Theme
 @media (orientation: portrait) {
-  .App{
+  .app{
     width: 100%;
     overflow: hidden;
     margin: auto;
