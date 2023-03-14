@@ -73,35 +73,23 @@ export const LinkClick = () => {
 
   //event listners
   aboutLink.addEventListener('click', function (event) {
-    event.preventDefault();
-
     scrollBar.scrollTo(0, aboutPosition, 400);
   });
   skillsLink.addEventListener('click', function (event) {
-    event.preventDefault();
-
     scrollBar.scrollTo(0, skillsPosition, 400);
   });
   projectsLink.addEventListener('click', function (event) {
-    event.preventDefault();
-
     scrollBar.scrollTo(0, projectsPosition, 800);
   });
   contactLink.addEventListener('click', function (event) {
-    event.preventDefault();
-
     scrollBar.scrollTo(0, contactPosition, 1200);
   });
 
   //special  listener
   aboutContactLink.addEventListener('click', function (event) {
-    event.preventDefault();
-
     scrollBar.scrollTo(0, contactPosition, 1200);
   });
   headerLink.addEventListener('click', function (event) {
-    event.preventDefault();
-
     scrollBar.scrollTo(0, projectsPosition, 800);
   });
 };
