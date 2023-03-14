@@ -1,55 +1,59 @@
 //App scripts
-import AOS from 'aos';
 
-export const SmoothScroll = () => {
-  //   let animation;
-  //   let currentDelay;
+export const SmoothScrollAnimate = () => {
+  //variables
+  let paralaxPosition = 0;
+  let durration = 0.05;
+  let scrollAmount = 6;
+  let scrollDelayed = 0;
+  let currentDelay = 0;
+  let animation;
 
-  //   const speed = 4;
+  //animation frame
+  function animate() {
+    let scrollY = 0;
 
-  //   let scrollPosition = 0;
-  //   let scrollDelayed = 0;
-  //   let durration = 0.1;
-  //   let wheel = 0;
+    scrollY =
+      document.querySelector('.app').getBoundingClientRect().top -
+      scrollDelayed;
 
-  //   function animate() {
-  //     let scrollY = 0;
+    //calculate the delay
+    scrollDelayed = parseInt(scrollDelayed + scrollY * durration);
 
-  //     scrollY = scrollPosition - scrollDelayed;
+    //animate the background
+    document.querySelector('.app-container').style.backgroundPosition =
+      '50% ' + scrollDelayed / scrollAmount + 'px';
 
-  //     scrollDelayed = parseInt(scrollDelayed + scrollY * durration);
+    //cancel the animation frame when animation is done
+    if (currentDelay == scrollDelayed) {
+      cancelAnimationFrame(animation);
+    } else {
+      currentDelay = scrollDelayed;
+      animation = requestAnimationFrame(animate);
+    }
+  }
 
-  //     document.documentElement.scrollTop = scrollDelayed;
-  //     // window.scrollTo({ top: scrollPosition});
+  //event listener when mouse wheel 
+  window.addEventListener(
+    'wheel',
+    (event) => {
+      event.preventDefault();
 
-  //     console.log(scrollPosition);
+      paralaxPosition = document
+        .querySelector('.app')
+        .getBoundingClientRect().top;
+      console.log(document.querySelector('#about').getBoundingClientRect().top);
+      animation = requestAnimationFrame(animate);
+    },
+    { passive: false }
+  );
 
-  //     if (currentDelay == scrollDelayed) {
-  //       cancelAnimationFrame(animation);
-  //     } else {
-  //       currentDelay = scrollDelayed;
-  //       animation = requestAnimationFrame(animate);
-  //     }
-  //   }
-
-  //   window.addEventListener(
-  //     'wheel',
-  //     (event) => {
-  //       event.preventDefault();
-
-  //       wheel = event.deltaY;
-  //       scrollPosition = window.scrollY + wheel * speed;
-
-  //       animation = requestAnimationFrame(animate);
-  //     },
-  //     {passive:false}
-  //   );
-
+  //observer to animate elements to fade in
   let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('aos-animate');
-      } 
+      }
     });
   });
   document.querySelectorAll('[data-aos]').forEach((aosElem) => {

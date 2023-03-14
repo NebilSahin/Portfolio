@@ -5,12 +5,14 @@ import Header from './components/Header';
 import Content from './components/Content';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { SmoothScroll } from './scripts/AppScripts';
+import { SmoothScrollAnimate } from './scripts/AppScripts';
 import Scrollbar from 'smooth-scrollbar';
 
 function App() {
   //effects after rendering
   useEffect(() => {
+    Scrollbar.init(document.querySelector('.app-container'));
+
     AOS.init({
       delay: 200,
       duration: 400,
@@ -28,9 +30,7 @@ function App() {
       splash.classList.add('done');
     }, 1500);
 
-    Scrollbar.init(document.querySelector('.app-container'));
-
-    SmoothScroll();
+    SmoothScrollAnimate();
   }, []);
 
   //render content

@@ -1,4 +1,5 @@
 //Navbar functions
+import Scrollbar from 'smooth-scrollbar';
 
 //on hover affect for the menu
 export const MenuHover = () => {
@@ -43,6 +44,48 @@ export const MenuHover = () => {
         });
     });
 };
+
+export const LinkClick = () => {
+    //document scrollbar element 
+    let scrollBar = Scrollbar.get(document.querySelector('.app-container'));
+
+    //links
+    let aboutLink = document.querySelector("#about-link");
+    let skillsLink = document.querySelector("#skills-link");
+    let projectsLink = document.querySelector("#projects-link");
+    let contactLink = document.querySelector("#contact-link");
+    let aboutContactLink = document.querySelector("#about-contact-link");
+    let headerLink = document.querySelector("#header-projects-link");
+
+    //section positions
+    let aboutPosition = document.querySelector('#about').getBoundingClientRect().top;
+    let skillsPosition = document.querySelector('#skills').getBoundingClientRect().top;
+    let projectsPosition = document.querySelector('#projects').getBoundingClientRect().top;
+    let contactPosition = document.querySelector('#contact').getBoundingClientRect().top;
+
+    //event listners
+    aboutLink.addEventListener("click", function () {
+        scrollBar.scrollTo(0, aboutPosition, 400);
+    });
+    skillsLink.addEventListener("click", function () {
+        scrollBar.scrollTo(0, skillsPosition, 400);
+    });
+    projectsLink.addEventListener("click", function () {
+        scrollBar.scrollTo(0, projectsPosition, 800);
+    });
+    contactLink.addEventListener("click", function () {
+        scrollBar.scrollTo(0, contactPosition, 1200);
+    });
+
+    //special  listener
+    aboutContactLink.addEventListener("click", function () {
+        scrollBar.scrollTo(0, contactPosition, 1200);
+    });
+    headerLink.addEventListener("click", function () {
+        scrollBar.scrollTo(0, projectsPosition, 800);
+    });
+
+}
 
 export const NavbarWidth = () => {
     //elements

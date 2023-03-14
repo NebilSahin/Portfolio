@@ -33,8 +33,9 @@ export default function Header() {
                             ></span>
                         </span>
                         <a
+                            id="header-projects-link"
                             className="header-arrow"
-                            href="#projects"
+                            href="#"
                             message="Some cool stuff"
                         >
                             <ArrowDownwardIcon className="icon animate" />

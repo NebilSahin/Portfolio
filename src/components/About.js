@@ -27,7 +27,8 @@ export default function About() {
                 </a>
                 <a
                     className="button primary"
-                    href="#contact"
+                    id="about-contact-link"
+                    href="#"
                     message="Let's get in touch"
                 >
                     {lang.contact}
