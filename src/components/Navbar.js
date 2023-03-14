@@ -41,6 +41,7 @@ export default function Navbar() {
                             id="about-link"
                             className="link link-bottom"
                             eventKey="link-2"
+                            href="#about"
                         >
                             {lang.about}
                         </Nav.Link>
@@ -50,6 +51,7 @@ export default function Navbar() {
                             id="skills-link"
                             className="link link-bottom"
                             eventKey="link-1"
+                            href="#skills"
                         >
                             {lang.skills}
                         </Nav.Link>
@@ -59,6 +61,7 @@ export default function Navbar() {
                             id="projects-link"
                             className="link link-top"
                             eventKey="link-2"
+                            href="projects"
                         >
                             {lang.projects}
                         </Nav.Link>
@@ -68,6 +71,7 @@ export default function Navbar() {
                             id="contact-link"
                             className="link link-top"
                             eventKey="link-2"
+                            href="#contact"
                         >
                             {lang.contact}
                         </Nav.Link>

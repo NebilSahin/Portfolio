@@ -29,7 +29,7 @@ export default function About() {
                 <a
                     className="button primary"
                     id="about-contact-link"
-                    href="#"
+                    href="#contact"
                     message="Let's get in touch"
                 >
                     {lang.contact}

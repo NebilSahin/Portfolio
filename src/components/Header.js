@@ -35,7 +35,7 @@ export default function Header() {
                         <a
                             id="header-projects-link"
                             className="header-arrow"
-                            href="#"
+                            href="#projects"
                             message="Some cool stuff"
                         >
                             <ArrowDownwardIcon className="icon animate" />
