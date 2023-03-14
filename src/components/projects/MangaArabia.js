@@ -12,7 +12,7 @@ export default function MangaArabia() {
                 data-aos="fade-right"
                 data-aos-delay="400"
             >
-                <img src={projectImg}></img>
+                <img src={projectImg} alt="project"></img>
             </div>
             <div
                 className="project-info"
@@ -37,7 +37,7 @@ export default function MangaArabia() {
                         message="Adobe Photoshop"
                     >
                         <div>
-                            <img src="https://www.svgrepo.com/show/452149/adobe-photoshop.svg"></img>
+                            <img src="https://www.svgrepo.com/show/452149/adobe-photoshop.svg" alt="photoshop"></img>
                         </div>
                     </div>
                 </div>
@@ -47,6 +47,7 @@ export default function MangaArabia() {
                         href="https://www.mangaarabia.com"
                         message="You can checkout the story on their app!"
                         target="_blank"
+                        rel="noreferrer"
                     >
                         {lang.visit}
                     </a>

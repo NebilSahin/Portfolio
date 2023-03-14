@@ -44,7 +44,7 @@ export default function Header() {
                     </div>
                     <div className="profile-container">
                         <div className="profile-img-bg">
-                            <img className="profile-img" src={profile}></img>
+                            <img className="profile-img" src={profile} alt="profile"></img>
                         </div>
                     </div>
                 </div>

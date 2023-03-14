@@ -28,7 +28,7 @@ This project is a my personal portfolio that I have built in <strong>ReactJS</st
 ## Demo
 <div align="center">
     <h3>
-        <a href="https://portfolio.nebilsahin.com" target="_blank">Live Demo</a>
+        <a href="https://portfolio.nebilsahin.com" target="_blank" rel="noreferrer">Live Demo</a>
     </h3>
 </div>
 

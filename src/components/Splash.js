@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import lang from "../lang/en.json";
 
 export default function Splash() {
@@ -8,7 +8,7 @@ export default function Splash() {
             <div>
                 <div className="loader"></div>
                 <div className="container-loading">
-                    <span className="loading">Loading</span>
+                    <span className="loading">{lang.loading}</span>
                 </div>
             </div>
         </div>

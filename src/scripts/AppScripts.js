@@ -2,7 +2,6 @@
 
 export const SmoothScrollAnimate = () => {
   //variables
-  let paralaxPosition = 0;
   let durration = 0.05;
   let scrollAmount = 6;
   let scrollDelayed = 0;
@@ -25,7 +24,7 @@ export const SmoothScrollAnimate = () => {
       '50% ' + scrollDelayed / scrollAmount + 'px';
 
     //cancel the animation frame when animation is done
-    if (currentDelay == scrollDelayed) {
+    if (currentDelay === scrollDelayed) {
       cancelAnimationFrame(animation);
     } else {
       currentDelay = scrollDelayed;
@@ -39,10 +38,6 @@ export const SmoothScrollAnimate = () => {
     (event) => {
       event.preventDefault();
 
-      paralaxPosition = document
-        .querySelector('.app')
-        .getBoundingClientRect().top;
-      console.log(document.querySelector('#about').getBoundingClientRect().top);
       animation = requestAnimationFrame(animate);
     },
     { passive: false }

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import './styles/App.scss';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
@@ -7,6 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { SmoothScrollAnimate } from './scripts/AppScripts';
 import Scrollbar from 'smooth-scrollbar';
+import { LinkClick } from "./scripts/NavbarScripts.js";
 
 function App() {
   //effects after rendering
@@ -31,6 +32,8 @@ function App() {
     }, 1500);
 
     SmoothScrollAnimate();
+
+    LinkClick();
   }, []);
 
   //render content

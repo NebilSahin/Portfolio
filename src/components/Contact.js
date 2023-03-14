@@ -1,6 +1,5 @@
 import React from "react";
 import lang from "../lang/en.json";
-import artImg from "../assets/footer-character.png";
 import { LinkedIn, EmailOutlined, GitHub } from "@mui/icons-material";
 
 export default function About() {
@@ -20,6 +19,7 @@ export default function About() {
                     href="mailto:nebil.s@hotmail.com"
                     message="Email Me"
                     target="_blank"
+                    rel="noreferrer"
                     data-aos="fade-up"
                     data-aos-delay="400"
                 >
@@ -31,6 +31,7 @@ export default function About() {
                     href="https://www.linkedin.com/in/nebil-sahin-4634441b6/"
                     message="Checkout My Linkedin"
                     target="_blank"
+                    rel="noreferrer"
                     data-aos="fade-up"
                     data-aos-delay="400"
                 >
@@ -42,16 +43,13 @@ export default function About() {
                     href="https://github.com/NebilSahin"
                     message="My Personal Projects"
                     target="_blank"
+                    rel="noreferrer"
                     data-aos="fade-up"
                     data-aos-delay="400"
                 >
                     <GitHub sx={{ fontSize: 35 }} />
                     <span>{lang.github}</span>
                 </a>
-            {/* </div> */}
-            {/* <div className="contact-col">
-                <img className="contact-character" src={artImg}></img>
-            </div> */}
         </div>
     );
 }

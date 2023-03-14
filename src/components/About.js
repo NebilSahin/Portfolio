@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import lang from "../lang/en.json";
 import cv from "../assets/Nebil Sahin CV 2023.pdf";
 
@@ -22,6 +22,7 @@ export default function About() {
                     href={cv}
                     message="Has more details"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     {lang.resume}
                 </a>

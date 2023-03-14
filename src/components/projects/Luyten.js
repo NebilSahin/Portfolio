@@ -12,7 +12,7 @@ export default function Luyten() {
                 data-aos="fade-right"
                 data-aos-delay="400"
             >
-                <img src={projectImg}></img>
+                <img src={projectImg} alt="project"></img>
             </div>
             <div
                 className="project-info"
@@ -40,22 +40,22 @@ export default function Luyten() {
                         message="React Native"
                     >
                         <div>
-                            <img src="https://www.svgrepo.com/show/452092/react.svg"></img>
+                            <img src="https://www.svgrepo.com/show/452092/react.svg" alt="react"></img>
                         </div>
                     </div>
                     <div className="pale-orange-2 skill-icon" message="Laravel">
                         <div>
-                            <img src="https://www.svgrepo.com/show/303379/laravel-logo.svg"></img>
+                            <img src="https://www.svgrepo.com/show/303379/laravel-logo.svg" alt="laravel"></img>
                         </div>
                     </div>
                     <div className="yellow skill-icon" message="JavaScript">
                         <div>
-                            <img src="https://www.svgrepo.com/show/349419/javascript.svg"></img>
+                            <img src="https://www.svgrepo.com/show/349419/javascript.svg" alt="javascript"></img>
                         </div>
                     </div>
                     <div className="pale-purple skill-icon" message="PHP">
                         <div>
-                            <img src="https://www.svgrepo.com/show/452088/php.svg"></img>
+                            <img src="https://www.svgrepo.com/show/452088/php.svg" alt="php"></img>
                         </div>
                     </div>
                 </div>
@@ -65,6 +65,7 @@ export default function Luyten() {
                         href="https://github.com/NebilSahin/Luyten"
                         message="Check it out"
                         target="_blank"
+                        rel="noreferrer"
                     >
                         {lang.githubPage}
                     </a>

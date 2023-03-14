@@ -2,14 +2,13 @@ import React, { useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
 import lang from "../lang/en.json";
 import profile from "../assets/Nebil-Sahin-Photo.jpg";
-import { MenuHover, NavbarWidth, LinkClick } from "../scripts/NavbarScripts.js";
+import { MenuHover, NavbarWidth } from "../scripts/NavbarScripts.js";
 
 export default function Navbar() {
     //effects after rendering
     useEffect(() => {
         MenuHover();
         NavbarWidth();
-        LinkClick();
     }, []);
 
     //render content
@@ -20,7 +19,7 @@ export default function Navbar() {
             data-aos-delay="200"
         >
             <div className="nav-logo">
-                <img src={profile}></img>
+                <img src={profile} alt="profile"></img>
                 <a href="/">{lang.nebilsahin}</a>
             </div>
             <div className="nav-links">
