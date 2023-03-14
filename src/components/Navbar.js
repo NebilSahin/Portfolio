@@ -61,7 +61,7 @@ export default function Navbar() {
                             id="projects-link"
                             className="link link-top"
                             eventKey="link-2"
-                            href="projects"
+                            href="#projects"
                         >
                             {lang.projects}
                         </Nav.Link>
